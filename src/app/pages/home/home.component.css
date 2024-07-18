@@ -1,0 +1,13 @@
+button {
+   background-color: #ff7758;
+}
+.contact{
+    height: 33rem;
+    margin-bottom: 10rem;
+    border-radius: 1rem;
+}
+
+h3{
+    font-size: 30px;
+    font-weight: 600;
+}

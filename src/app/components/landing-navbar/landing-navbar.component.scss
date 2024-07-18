@@ -1,0 +1,25 @@
+.logo-title {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 1em;
+    margin: 0;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+}
+
+p {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: .6em;
+    padding-left: 1rem;
+    letter-spacing: 0.2em;
+}
+
+.bg-transparent {
+    background-color: transparent;
+}
+
+.bg-white {
+    background-color: #f8dff5ea;
+    transition: background-color 0.3s;
+}

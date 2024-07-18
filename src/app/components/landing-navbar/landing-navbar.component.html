@@ -1,0 +1,52 @@
+<nav [ngClass]="{'bg-white': isScrolled, 'bg-transparent': !isScrolled}"  class="navbar dark:bg-gray-900 fixed w-full z-20 top-0 start-0 px-10 py-7">
+    <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+        <div class="flex">
+            <a href="#" class="items-center space-x-3 rtl:space-x-reverse">
+                <h1 class="logo-title">Esma Harmancı</h1>
+                <p>Frontend Developer</p>
+            </a>
+            <div class="items-center justify-between hidden w-full lg:flex lg:w-auto lg:order-1 ml-12" id="navbar-sticky">
+                <ul
+                    class="flex flex-col p-4 lg:p-0 mt-4 font-medium border border-gray-100 rounded-lg lg:space-x-8 rtl:space-x-reverse lg:flex-row lg:mt-0 lg:border-0 dark:border-gray-700">
+                    <app-navbar-item text="Anasayfa" link="#"></app-navbar-item>
+                    <app-navbar-item text="Blog" link="#"></app-navbar-item>
+                    <app-navbar-item text="İletişim" link="#"></app-navbar-item>
+                </ul>
+            </div>
+        </div>
+
+        <div class="flex lg:order-2 space-x-3">
+
+            <button type="button" data-dropdown-toggle="language-dropdown-menu"
+                class="inline-flex bg-gray-100 dark:bg-gray-800 items-center font-medium justify-center mt-1 rounded-full h-6.5 w-8 text-sm text-gray-900 dark:text-white cursor-pointer">
+                <img class="h-5 w-5" src="../assets/theme/contrast.png" alt="">
+            </button>
+
+            <div class="flex items-center space-x-1 md:space-x-0 rtl:space-x-reverse">
+                <button type="button" data-dropdown-toggle="language-dropdown-menu"
+                    class="inline-flex items-center font-medium justify-center text-sm text-gray-900 dark:text-white rounded-lg cursor-pointer dark:hover:bg-gray-700 dark:hover:text-white">
+                    <img class="h-7 w-7 rounded-full" src="../../../assets/lang/27134.jpg" alt="">
+                </button>
+                <div class="z-50 hidden my-4 text-base list-none divide-y divide-gray-100 rounded-lg shadow dark:bg-gray-700"
+                    id="language-dropdown-menu">
+                    <ul class="py-2 font-medium" role="none">
+                        <app-navbar-lang-menu text="Türkçe" img="../../../assets/lang/27134.jpg"></app-navbar-lang-menu>
+                        <app-navbar-lang-menu text="İngilizce"
+                            img="../../../assets/lang/18165.jpg"></app-navbar-lang-menu>
+                    </ul>
+                </div>
+            </div>
+
+            <app-navbar-button text="Üye Ol" class="button1"></app-navbar-button>
+            <app-navbar-button text="Giriş Yap" class="button2"></app-navbar-button>
+
+            <button data-collapse-toggle="navbar-sticky" type="button"
+                class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg lg:hidden hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+                aria-controls="navbar-sticky" aria-expanded="false">
+                <img src="../../../assets/hamburger.png" alt="">
+            </button>
+
+        </div>
+
+    </div>
+</nav>
